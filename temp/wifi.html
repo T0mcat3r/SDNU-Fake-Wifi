@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Drcom上网登录窗</title>
+		<style>
+		a {text-decoration: none}
+		body {text-align:center;background-color: #F0F9FE;}
+		.f1 { font-size: 9pt; font-family: Verdana; line-height: 12pt ;  color:#5F6468}
+		.f2 { font-size: 9pt; font-family: Verdana; line-height: 14pt; color:#5A7E98}
+		.input-border{border:1px solid #b8b8b8;	width:168px; line-height:20px; font-size:14px; height:22px;}
+		.con {width: 900px; height:500px; margin-right: auto; margin-left: auto; margin-top: 10px;}
+		.login {background-image:url(../static/img/a01.jpg); background-repeat: no-repeat; float: left;width: 900px; height:500px;}
+		.login .b_left {float: left;height: 450px;width: 400px}
+		.login .b_cernet {float: left;height: 450px;width: 336px;}
+		.login .b_right {float: left;height: 450px;	width: 64px;}
+		.login-b,.login-b2, .login-b3{background-image: url(../static/img/a04.gif);height: 26px;width: 77px;border:0 none;cursor:hand !important;  font-size: 12px; color:#fff}
+		.login-b2{background-image: url(../static/img/a04.gif);	background-position: 0px -27px}
+		.login-b3{background-image: url(../static/img/a04.gif); background-position: 0px -54px}
+		</style>
+		<script language="JavaScript" type="text/javascript">
+			function setFormFocus() {
+  			document.forms[0].strAccount.focus(); 
+  			document.forms[0].strAccount.select();
+			}
+			function tologin(){
+			var thisform=document.forms[0];
+			if(thisform.strAccount.value=="") {alert("请输入用户名");thisform.strAccount.focus(); return false;}
+	 		else if(thisform.strPassword.value=="") {alert("请输入密码");thisform.strPassword.focus();	return false;}
+	 		else {
+			thisform.submit();
+				}
+			}
+		</script>
+	</head>
+	<body onselectstart="return false">
+		<div class="con"> 
+		<div class="login">
+<div class="b_left" style="width: 398px; height: 450px">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="415">
+				<tr>
+					<td height="145" colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="25" height="180">　</td>
+					<td height="190"><iframe name="I1" width="350"  height="184" frameborder="0" src="/notice" marginwidth="1" marginheight="1" allowtransparency="yes" target="_blank" scrolling="yes"></iframe></td>
+					<td width="4" height="180">　</td>
+				</tr>
+				<tr>
+					<td colspan="2">　</td>
+				</tr>
+			</table>
+</div>
+<div class="b_cernet" style="width: 325px; height: 450px">
+<form name=form1 method=post action="/Control">
+<input type="hidden" name="id" value="2000">
+<table border="0" width="100%" cellspacing="1" cellpadding="0" height="100%" class="f1">
+	<tr>
+		<td height="177" colspan="2">
+		<p align="center">
+		　</td>
+	</tr>
+	<tr>
+		<td height="47" width="37%" align="right">用户名 Username</td>
+		<td height="47" width="62%">&nbsp;<input name="strAccount" type="text" maxlength="11" class="input-border" ></td>
+	</tr>
+	<tr>
+		<td height="38" width="37%" align="right">密　码 Password </td>
+		<td height="38" width="62%">&nbsp;<input name="strPassword" type="password" maxlength="16" class="input-border"></td>
+	</tr>
+	<tr>
+		<td height="38" width="37%">　</td>
+		<td height="38" width="62%" align="left">
+		<input type="submit" value="登录" class="login-b" onMouseOver="this.className='login-b2'" onMouseDown="this.className='login-b3'" onMouseOut="this.className='login-b'"/>&nbsp;&nbsp; 
+		</td>
+	</tr>
+	<tr>
+		<td height="55">
+		<p align="center">　</td>
+		<td height="55" align="left">
+		          <input type="checkbox" name="savePWD" value="0">保存密码</td>
+	</tr>
+	<tr>
+		<td height="36">　</td>
+		<td height="36"><font color="#999999">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td valign="top" colspan="2">
+		　</td>
+	</tr>
+</table>
+</form>
+</div>
+<div class="b_right" style="width: 69px; height: 450px">
+</div>
+</div>
+</div>
+</body>
+
+</html>
