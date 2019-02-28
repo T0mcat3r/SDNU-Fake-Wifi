@@ -7,4 +7,4 @@ def insertinfo(user,pwd,headers):
     cursor.execute(sql,(user,pwd,headers))
     conn.commit()
     cursor.close()
-    #conn.close()
+    conn.close()
