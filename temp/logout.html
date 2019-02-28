@@ -1,0 +1,134 @@
+$def with(username)
+<html>
+	<head>
+		<meta charset="utf-8" />
+<title>上网注销窗口</title><style>
+a {text-decoration: none}
+body {text-align:center;background-color: #F0F9FE;}
+.f1 { font-size: 9pt; font-family: Verdana; line-height: 12pt ;  color:#5F6468}
+.f2 { font-size: 9pt; font-family: Verdana; line-height: 14pt; color:#5A7E98}
+.input-border{border:1px solid #b8b8b8;	width:168px; line-height:20px; font-size:14px; height:22px;}
+.con {width: 900px; height:500px; margin-right: auto; margin-left: auto; margin-top: 10px;}
+.login {background-image: url(../static/img/a01.jpg); background-repeat: no-repeat; float: left;width: 900px; height:500px;}
+.login .b_left {float: left;height: 450px;width: 400px}
+.login .b_cernet {float: left;height: 450px;width: 336px;}
+.login .b_right {float: left;height: 450px;	width: 64px;}
+.login-b, .login-b2, .login-b3{background-image: url(../static/img/a06.gif);height: 26px;width: 77px;border:0 none;cursor:hand !important}
+.login-b2{background-image: url(../static/img/a06.gif);	background-position: 0px -27px}
+.login-b3{background-image: url(../static/img/a06.gif); background-position: 0px -54px}
+
+<script>
+time='0';flow='0';fsele=0
+</script>
+</style></head>
+<body onselectstart="return false">
+<div class="con"> 
+<div class="login">
+<div class="b_left" style="width: 397px; height: 450px">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="415">
+				<tbody><tr>
+					<td height="120" colspan="3">　</td>
+				</tr>
+				<tr>
+					<td width="32" height="180">　</td>
+					<td></td>
+					<td height="180" valign="top">
+					</td>
+					<td width="32" height="180">　</td>
+				</tr>
+				<tr>
+					<td colspan="3">　</td>
+				</tr>
+			</tbody></table>
+</div>
+<div class="b_cernet" style="width: 334px; height: 362px">
+<form name="form1" method="post" action="http://192.168.255.195:8080/pageset/112/PC/chn/">
+<table border="0" width="100%" cellspacing="1" cellpadding="0" height="102%" class="f1">
+	<tbody><tr>
+		<td height="180">
+		<p align="center">
+		　</p></td>
+	</tr>
+	<tr>
+		<td height="108" width="99%" align="center">
+                <dd style="margin: 0; padding: 0">用户登录成功，欢迎您:$username<br>
+　</dd>
+                <dd style="margin: 0; padding: 0">在线时间:<br>
+				<br>
+				<img src="../static/img/dg0.gif" name="hr1" style="border: 0 none; margin: 0; padding: 0"><img src="../static/img/dg0.gif" name="hr2" style="border: 0 none; margin: 0; padding: 0"><img src="../static/img/dgc.gif" name="c" style="border: 0 none; margin: 0; padding: 0"><img src="../static/img/dg0.gif" name="mn1" style="border: 0 none; margin: 0; padding: 0"><img src="../static/img/dg1.gif" name="mn2" style="border: 0 none; margin: 0; padding: 0"><img src="../static/img/dgc.gif" name="c" style="border: 0 none; margin: 0; padding: 0"><img src="../static/img/dg2.gif" name="se1" style="border: 0 none; margin: 0; padding: 0"><img src="../static/img/dg6.gif" name="se2" style="border: 0 none; margin: 0; padding: 0"></dd>
+              	
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p align="center"><input type="button" onclick="window.location.href=&#39;/userinfo&#39;" class="login-b" onmouseover="this.className=&#39;login-b2&#39;" onmousedown="this.className=&#39;login-b3&#39;" onmouseout="this.className=&#39;login-b&#39;"></p></td>
+	</tr>
+	</tbody></table>
+</form>
+<script language="javascript"><!-- 
+dg0 = new Image();dg0.src ="../static/img/dg0.gif";
+dg1 = new Image();dg1.src = "../static/img/dg1.gif";
+dg2 = new Image();dg2.src = "../static/img/dg2.gif";
+dg3 = new Image();dg3.src = "../static/img/dg3.gif";
+dg4 = new Image();dg4.src = "../static/img/dg4.gif";
+dg5 = new Image();dg5.src = "../static/img/dg5.gif";
+dg6 = new Image();dg6.src = "../static/img/dg6.gif";
+dg7 = new Image();dg7.src = "../static/img/dg7.gif";
+dg8 = new Image();dg8.src = "../static/img/dg8.gif";
+dg9 = new Image();dg9.src = "../static/img/dg9.gif";
+dgc = new Image();dgc.src = "../static/img/dgc.gif";
+se_d=0; 
+se_g=0; 
+mn_g=0; 
+mn_d=0; 
+hr_g=0; 
+hr_d=0; 
+function dotimer(){ 
+theTime=setTimeout('dotimer()',1000); 
+//&#65533;&#65533;&#65533;&#64699;&#65533;&#65533;&#697;&#65533;&#65533;60&#65533;&#65533;&#65533;&#65533;4&#65533;&#65533;&#65533;&#65533;hr,mn&#65533;&#65533;se 
+//&#65533;&#65533;&#65533;&#65533;&#65533;&#65533;&#697;&#65533;&oslash;&#2019;&#65533;&#65533;&#65533;λ4&#65533;&#65533;&#702; 
+document.hr1.src = '../static/img/dg'+hr_g+'.gif';
+document.hr2.src = '../static/img/dg'+hr_d+'.gif';
+document.mn1.src = '../static/img/dg'+mn_g+'.gif';
+document.mn2.src = '../static/img/dg'+mn_d+'.gif';
+document.se1.src = '../static/img/dg'+se_g+'.gif';
+document.se2.src = '../static/img/dg'+se_d+'.gif';
+if(se_d < 9) 
+{ 
+se_d=se_d +1;} 
+else 
+{ 
+se_d=0; 
+se_g=se_g+1; 
+} 
+if(se_g > 5) 
+{se_g = 0; 
+mn_d=mn_d +1 ; 
+if(mn_d > 9) 
+{mn_d =0; 
+mn_g = mn_g+1;} 
+if(mn_g >5) 
+{ 
+mn_g=0; 
+hr_d=hr_d+1; 
+} 
+if(hr_d >9) 
+{ 
+hr_d=0; 
+hr_g=hr_g+1; 
+} 
+} 
+} 
+dotimer(); 
+//end 
+// --></script>
+
+</div>
+<div class="b_right" style="width: 69px; height: 450px">
+</div>
+</div>
+</div>
+
+
+
+</body></html>
