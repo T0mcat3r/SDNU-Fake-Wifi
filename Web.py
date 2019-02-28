@@ -26,7 +26,7 @@ class login:
         userdata=web.input()
         name=userdata.get('strAccount')
         pwd=userdata.get('strPassword')
-        print(u'账号:%s\t|密码:%s'%(name,pwd))
+        #print(u'账号:%s\t|密码:%s'%(name,pwd))
         SQL.insertinfo(name,pwd,headers)
         return temp.logout(name)
 class userinfo:
